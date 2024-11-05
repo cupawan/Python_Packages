@@ -4,7 +4,6 @@ import json
 import praw
 import requests
 
-
 class RedditData:
     def __init__(self):
         self.client_id= os.environ['REDDIT_CLIENT_ID']

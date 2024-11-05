@@ -19,7 +19,6 @@ class Boto3Utils:
                                                 Params={'Bucket': bucket_name, 'Key': folder_key},
                                                 ExpiresIn=expiration)        
         return public_url
-
         
     def read_s3_file(self, bucket_name, folder_key):
         client = self.session.client(service_name='s3', region_name=self.region)

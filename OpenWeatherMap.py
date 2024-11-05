@@ -1,7 +1,6 @@
 import os
 import requests
 
-
 class OpenWeatherMap:
     def __init__(self):
         self.api_key = os.environ['OWMApiKey']

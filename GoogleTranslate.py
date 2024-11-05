@@ -12,7 +12,7 @@ class Translator():
         url = f"{self.base_url}/detect"
         payload = {
             'q' : query,
-            'key' : self.config
+            'key' : self.api_key
         }
         response = requests.post(url = url, data = payload)
         if response.status_code == 200:

@@ -2,7 +2,6 @@ import os
 import yaml
 import gspread
 
-
 class GoogleSheetsAutomation:
     def __init__(self):
         self.client_secrets_path = os.environ['GOOGLE_CLIENT_SECRETS_PATH']

@@ -23,18 +23,18 @@ class Translator():
             print("No response from the API, check if service is enabled on https://console.developers.google.com/apis/api/translate.googleapis.com/overview?project=<project_id>")
 
     def code_to_language(self,lang_code):
-        for k,v in self.language_codes:
-            if v == lang_code.lower():
+        for k,v in self.language_codes.items():
+            if v.lower() == lang_code.lower():
                 return k
             else:
-                raise
+                pass
 
     def language_to_code(self,language):
-        for k,v in self.language_codes:
-            if k == language.lower():
+        for k,v in self.language_codes.items():
+            if k.lower() == language.lower():
                 return v
             else:
-                raise
+                pass
 
     def translate(self,string,target):
         url = self.base_url
